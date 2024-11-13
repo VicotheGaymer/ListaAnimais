@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Animais</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .animal-list { margin-top: 20px; }
-        .animal-item { padding: 10px; border-bottom: 1px solid #ccc; }
-        button { margin-top: 20px; padding: 10px; }
-    </style>
+    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
     <h1>Lista de Animais</h1>
     <div class="animal-list" id="animalList"></div>
-    <form>
-        <div>
-            <label>Nome:</label>
-            <input type="text" id="Nome">
-        </div>
-        <div>
-            <label>Idade:</label>
-            <input type="number" id="Idade">
-        </div>
-        <div>
-            <label>Raça:</label>
-            <input type="text" id="Raca">
-        </div>
     </form>
-    <button onclick="cadastrarAnimal()">Cadastrar Animal</button>
-    <button onclick="fetchAnimais()">Mostrar Lista</button>
-    <button onclick="apagarLista()">Apagar Lista</button>
-    <button onclick="fetchAnimais()">Atualizar Lista</button>
+    <div id="fform"></div>
+    <div>
+        <button onclick="fetchAnimais()">Mostrar Lista</button>
+        <button onclick="apagarLista()">Esconder Lista</button>
+    </div>
+    <div>
+        <button onclick="adicionaItem()">Cadastrar Animal</button>
+        <button onclick="fetchAnimais()">Atualizar Lista</button>
+    </div>
+    <div>
+        <button onclick="apagaItem()">Apagar Animal Da Lista</button>
+        <button onclick="atualizaItem()">Atualizar Animal Da Lista</button>
+    </div>
 
     <script src="index.js"></script>
 </body>
