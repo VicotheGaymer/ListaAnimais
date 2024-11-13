@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;  
+    min-height: 100vh;  
+    text-align: center;  
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;  
+    font-size: 1.2rem;  
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+    min-width: 150px;
+    max-width: 250px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);  
+}
+
+button:active {
+    background-color: #1c6692;  
+    transform: scale(1);  
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 20px;
+}
+
+.animal-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.animal-item {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.animal-item strong {
+    color: #3498db;
+}
+
+#fform {
+    width: 350px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .animal-list {
+        width: 90%;
+    }
+
+    input[type="text"], input[type="number"], button {
+        width: 100%;
+    }
+
+    .buttons-container {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .animal-item {
+        font-size: 0.9rem;
+    }
+}
